@@ -6,14 +6,14 @@ const PORT = 3000;
 
 // Mock Inventory Data
 let inventory = {
-  'item1': { name: 'Item 1', quantity: 10 },
+  'item1': { name: 'Item 1', quantity: 4 },
   'item2': { name: 'Item 2', quantity: 5 }
 };
 
 app.use(bodyParser.json());
 
 // Health check endpoint
-app.get('/health', (req, res) => res.status(200).send('OK'));
+app.get('/health', (req, res) => res.status(200).send('OKEY'));
 
 
 
